@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    color: #e5e5e5;
+    font-weight: 100;
+}
+
+.accent-clr{color:rgb(65,173,212);}
+.accent-bg-orn{background: #ff9012;}
+.accent-text-orn{color: #ff9012;}
+.fl{display: flex;}
+.fl-col{flex-direction: column;}
+.al-it-cen{align-items: center;}
+.jst-con-sp_ar{justify-content: space-around;}
+.jst-con-sp_btw{justify-content: space-between;}
+.jst-con-cen{justify-content: center;}
+.max-wth{max-width: 1440px;}
+.mrg-auto{margin: 0 auto;}
+.pdd-20{padding: 20px 0 20px 0;}
+
+h2{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+header{
+    background: rgb(10,28,48);
+    flex-wrap: wrap;
+}
+
+header .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header .logo p{
+    width: 50px;
+    height: 50px;
+    color: #e5e5e5;
+    font-size: 30px;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+
+.num a{
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 28px;
+    margin: 0 10px 0 0;
+}
+
+.num a span{
+    margin: 0 5px 0 5px;
+}
+
+.num p{
+    font-size: 14px;
+}
+
+nav{
+    background: linear-gradient(rgb(10,28,48) 0 50%,rgb(13,34,61) 50% 100%);
+}
+
+nav ul{
+    list-style: none;
+    background-color:#e5e5e5;
+    border-radius: 5px;
+    box-shadow: 5px 8px 10px #1f1f1f;
+}
+
+nav ul li{
+    display: inline;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-right: 1px solid hwb(0 12% 88% / 0.407);
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: #101a43;
+}
+
+main{
+    width: 100%;
+}
+
+.services{
+    min-width: 100%;
+    background: rgb(13,34,61);
+}
+
+.services-items{
+    min-width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding-top: 20px;
+    border-radius: 15px;
+} 
+
+.item{
+    width: 200px;
+    height: 250px;
+    background-color: #ff9012;
+    border: 1px solid #ff9012;
+    border-radius: 10px;
+}
